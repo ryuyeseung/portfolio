@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="./image-slot.js"></script>
+<script src="./slot-autosave.js"></script>
+<meta name="ext-resource-dependency" content="./assets/slide-01.jpg" />
+<meta name="ext-resource-dependency" content="./assets/slide-02.jpg" />
+<style>
+  html, body { margin: 0; padding: 0; background: #FFFFFF; }
+  * { box-sizing: border-box; }
+  a { color: #0F0F0F; text-decoration: none; }
+  a:hover { color: #A50D24; }
+  ::selection { background: #FFD3D9; }
+</style>
+</helmet>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#C8102E"></rect><text x="50" y="62" font-family="Helvetica, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">YR</text></svg>
+</template>
+<div style="background:#FFFFFF; color:#0F0F0F; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden">
+
+  <header style="max-width:1180px; margin:0 auto; padding:36px 48px 0; display:flex; align-items:baseline; justify-content:space-between; gap:24px">
+    <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E6E6E">Ye-Seung (Alyssa) Ryu</span>
+    <nav style="display:flex; gap:28px; font-size:13px; letter-spacing:0.02em; color:#454545">
+      <a href="#work" style="color:inherit">Work</a>
+      <a href="#cv" style="color:inherit">CV</a>
+      <a href="#contact" style="color:inherit">Contact</a>
+    </nav>
+  </header>
+
+  <section style="max-width:1180px; margin:0 auto; padding:140px 48px 150px">
+    <h1 style="margin:0; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,sans-serif; font-weight:700; font-size:clamp(48px,7.6vw,112px); line-height:0.9; letter-spacing:-0.035em; text-transform:uppercase">URBAN<br />PLANNING<br />TO<br />SUSTAINABILITY</h1>
+    </div>
+  </section>
+
+  <section style="position:relative; width:100vw; margin-left:calc(50% - 50vw); margin-top:8px; background:#0F0F0F; overflow:hidden; touch-action:pan-y" onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" onPointerEnter="{{ onEnter }}" onPointerLeave="{{ onLeave }}">
+    <div style="position:relative; width:100%; aspect-ratio:21 / 9; overflow:hidden; cursor:grab">
+      <div style="{{ trackStyle }}">
+        <sc-for list="{{ slides }}" as="s" hint-placeholder-count="5">
+          <div style="flex:0 0 100%; height:100%; position:relative; background:#0F0F0F; background-image:radial-gradient(rgba(255,255,255,0.20) 1.2px, transparent 1.3px); background-size:9px 9px; display:flex; align-items:flex-end; padding:36px 48px; user-select:none">
+            <div style="position:absolute; inset:0; filter:grayscale(1) contrast(1.04)">
+              <image-slot id="{{ s.slotId }}" src="{{ s.img }}" shape="rect" placeholder="Drop field photograph"></image-slot>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="position:absolute; left:48px; bottom:0; right:48px; height:1px; background:rgba(255,255,255,0.16)"></div>
+      <div style="{{ progressStyle }}"></div>
+    </div>
+    <div style="position:absolute; top:24px; right:48px; display:flex; gap:8px">
+      <button type="button" onClick="{{ prev }}" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.28); background:transparent; color:#FFFFFF; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:14px; cursor:pointer; transition:background 150ms ease" style-hover="background:rgba(255,255,255,0.14)">←</button>
+      <button type="button" onClick="{{ next }}" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.28); background:transparent; color:#FFFFFF; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:14px; cursor:pointer; transition:background 150ms ease" style-hover="background:rgba(255,255,255,0.14)">→</button>
+    </div>
+  </section>
+
+  <section id="work" style="max-width:1180px; margin:0 auto; padding:96px 48px 0">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; padding-bottom:24px; border-bottom:1px solid #DCDCDC">
+      <h2 style="margin:0; display:flex; align-items:baseline; gap:18px; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:500; font-size:34px; letter-spacing:-0.02em">
+        <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:13px; letter-spacing:0.1em; color:#C8102E">01</span>
+        Core experience
+      </h2>
+      <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12px; color:#6E6E6E">2023 — 2026</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:1px; background:#DCDCDC; border-bottom:1px solid #DCDCDC">
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="8">
+        <article onClick="{{ p.open }}" style="background:#FFFFFF; padding:28px 26px 32px; display:flex; flex-direction:column; gap:16px; transition:background 160ms ease" style-hover="background:#F2F2F2">
+          <sc-if value="{{ p.hasImage }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex; align-items:center; justify-content:space-between; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6E6E6E">
+            <span>{{ p.num }}</span>
+            <span>{{ p.year }}</span>
+          </div>
+          </sc-if>
+          <sc-if value="{{ p.hasImage }}" hint-placeholder-val="{{ true }}">
+            <div onClick="{{ stop }}" style="position:relative; height:128px; border:1px solid #DCDCDC; background:#F0F0F0">
+              <image-slot id="{{ p.tileSlot }}" shape="rect" placeholder="{{ p.imageNote }}"></image-slot>
+            </div>
+          </sc-if>
+          <sc-if value="{{ p.hasImage }}" hint-placeholder-val="{{ true }}">
+          <h3 style="margin:0; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:500; font-size:21px; line-height:1.28; letter-spacing:-0.018em; text-wrap:pretty">{{ p.title }}</h3>
+          </sc-if>
+          <sc-if value="{{ p.isNext }}" hint-placeholder-val="{{ false }}">
+            <h3 style="margin:auto 0; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:600; font-size:clamp(34px,3.4vw,46px); line-height:1.04; letter-spacing:-0.03em; color:#C8102E; text-wrap:pretty">{{ p.title }}</h3>
+          </sc-if>
+          <p style="margin:0; font-size:14.5px; line-height:1.62; color:#454545; text-wrap:pretty">{{ p.blurb }}</p>
+          <sc-if value="{{ p.hasImage }}" hint-placeholder-val="{{ true }}">
+          <div style="margin-top:auto; padding-top:10px; display:flex; flex-wrap:wrap; gap:10px; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase">
+            <span style="color:#C8102E">{{ p.role }}</span>
+          </div>
+          </sc-if>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1180px; margin:0 auto; padding:104px 48px 0">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:24px; padding-bottom:26px; border-bottom:1px solid #DCDCDC">
+      <h2 style="margin:0; display:flex; align-items:baseline; gap:18px; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:500; font-size:34px; letter-spacing:-0.02em">
+        <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:13px; letter-spacing:0.1em; color:#C8102E">02</span>
+        Works
+      </h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:14px; padding:32px 0 0; align-items:start">
+      <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="10">
+        <figure style="{{ g.wrap }}">
+          <div style="width:100%; aspect-ratio:2 / 3; background:#F0F0F0; border:1px solid #E0E0E0">
+            <image-slot id="{{ g.id }}" shape="rect" placeholder="Drop image"></image-slot>
+          </div>
+        </figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1180px; margin:0 auto; padding:104px 48px 0">
+    <div style="display:grid; grid-template-columns:1fr 1.55fr; gap:56px; align-items:start">
+      <div style="position:sticky; top:48px">
+        <p style="margin:0; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A50D24">Working method</p>
+        <p style="margin:20px 0 0; font-size:17px; line-height:1.66; color:#2E2E2E; text-wrap:pretty">The work moves between the desk and the street: frameworks on one side, merchants and municipal officers on the other. Each block is a stretch of that back-and-forth.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:span 2; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:span 2; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:span 1; height:62px; background:#C8102E"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:2 / span 3; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:span 2; height:62px; background:#0F0F0F"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:span 1; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:3 / span 2; height:62px; background:#0F0F0F"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:2 / span 4; height:62px; background:#0F0F0F; background-image:radial-gradient(rgba(255,255,255,0.22) 1px, transparent 1.1px); background-size:8px 8px"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:span 3; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:5 / span 2; height:62px; background:#0F0F0F"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px">
+          <div style="grid-column:3 / span 2; height:62px; background:#0F0F0F"></div>
+          <div style="grid-column:span 1; height:62px; background:#0F0F0F"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" style="max-width:1180px; margin:0 auto; padding:96px 48px 0">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; padding-bottom:24px; border-bottom:1px solid #DCDCDC">
+      <h2 style="margin:0; display:flex; align-items:baseline; gap:18px; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:500; font-size:34px; letter-spacing:-0.02em">
+        <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:13px; letter-spacing:0.1em; color:#C8102E">03</span>
+        Curriculum vitae
+      </h2>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:12px 64px; padding:34px 0 0">
+      <p style="margin:0; flex:0 0 auto; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A50D24; padding-top:8px">Skills</p>
+      <div style="width:min(340px,100%); border-top:1px solid #0F0F0F; padding-top:6px">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:9px 0; border-bottom:1px solid #ECECEC">
+          <span style="font-size:13px; color:#2E2E2E">Urban master planning</span>
+          <span style="display:flex; gap:6px"><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span></span>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:9px 0; border-bottom:1px solid #ECECEC">
+          <span style="font-size:13px; color:#2E2E2E">GIS & spatial analysis</span>
+          <span style="display:flex; gap:6px"><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#E2E2E2"></span></span>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:9px 0; border-bottom:1px solid #ECECEC">
+          <span style="font-size:13px; color:#2E2E2E">Policy research & writing</span>
+          <span style="display:flex; gap:6px"><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#E2E2E2"></span></span>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:9px 0; border-bottom:1px solid #ECECEC">
+          <span style="font-size:13px; color:#2E2E2E">Adobe Illustrator / InDesign</span>
+          <span style="display:flex; gap:6px"><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#E2E2E2"></span></span>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:9px 0; border-bottom:1px solid #ECECEC">
+          <span style="font-size:13px; color:#2E2E2E">Data analysis (Excel · Python)</span>
+          <span style="display:flex; gap:6px"><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#C8102E"></span><span style="width:9px; height:9px; border-radius:50%; background:#E2E2E2"></span><span style="width:9px; height:9px; border-radius:50%; background:#E2E2E2"></span></span>
+        </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1.15fr; gap:64px; padding:44px 0 56px; border-bottom:1px solid #DCDCDC; align-items:start">
+      <div>
+        <p style="margin:0; font-size:19px; line-height:1.5; font-weight:500; letter-spacing:-0.015em; text-wrap:pretty">Urban Planning and Design<br />International Development<br />Climate Resilience</p>
+        <p style="margin:26px 0 0; font-size:16px; line-height:1.68; color:#2E2E2E; text-wrap:pretty">Through collaborations with governments, research institutions, and international organizations, I have explored how cities can respond to climate change, rapid urbanization, and infrastructure challenges.</p>
+        <p style="margin:14px 0 0; font-size:16px; line-height:1.68; color:#2E2E2E; text-wrap:pretty">I am particularly interested in climate-resilient urban development and sustainable cities in developing countries.</p>
+        <p style="margin:14px 0 0; font-size:16px; line-height:1.68; color:#2E2E2E; text-wrap:pretty">In particular, I have developed expertise in analyzing longitudinal data spanning more than four years and identifying practical solutions to complex urban challenges, including population aging, urban deterioration, and real estate issues.</p>
+      </div>
+      <div>
+        <h3 style="margin:0 0 18px; font-size:15px; font-weight:600; letter-spacing:-0.01em">🌍 My experiences :</h3>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:12px">
+          <sc-for list="{{ experiences }}" as="x" hint-placeholder-count="4">
+            <li style="position:relative; padding-left:20px; font-size:16px; line-height:1.6; color:#0F0F0F; text-wrap:pretty">
+              <span style="position:absolute; left:0; top:10px; width:6px; height:6px; background:#C8102E"></span>
+              {{ x }}
+            </li>
+          </sc-for>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding:36px 0 0">
+      <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#C8102E">[ Keep Updating ]</span>
+    </div>
+
+    <sc-for list="{{ cvGroups }}" as="g" hint-placeholder-count="5">
+      <div style="display:grid; grid-template-columns:300px 1fr; gap:40px; padding:34px 0; border-bottom:1px solid #E6E6E6">
+        <h3 style="margin:0; font-size:17px; font-weight:600; letter-spacing:-0.015em; text-wrap:pretty">{{ g.heading }}</h3>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:14px">
+          <sc-for list="{{ g.entries }}" as="e" hint-placeholder-count="3">
+            <li style="display:flex; align-items:baseline; justify-content:space-between; gap:24px; border-bottom:1px dotted #DCDCDC; padding-bottom:12px">
+              <span style="font-size:16px; line-height:1.5; color:#0F0F0F; text-wrap:pretty">{{ e.title }}</span>
+              <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12.5px; color:#666666; white-space:nowrap">{{ e.dates }}</span>
+            </li>
+          </sc-for>
+        </ul>
+      </div>
+    </sc-for>
+  </section>
+
+  <sc-if value="{{ detail }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeDetail }}" style="position:fixed; inset:0; z-index:60; background:rgba(0,0,0,0.55); display:flex; align-items:flex-start; justify-content:center; padding:56px 24px; overflow-y:auto">
+      <div onClick="{{ stop }}" style="position:relative; width:100%; max-width:860px; background:#FFFFFF; border:1px solid #DCDCDC">
+        <button type="button" onClick="{{ closeDetail }}" style="position:absolute; top:16px; right:16px; width:38px; height:38px; border:1px solid #DCDCDC; background:#FFFFFF; color:#0F0F0F; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:15px; cursor:pointer; transition:background 150ms ease" style-hover="background:#F2F2F2">✕</button>
+        <div style="padding:44px 48px 48px">
+          <div style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:11.5px; letter-spacing:0.18em; text-transform:uppercase; color:#C8102E">{{ detail.num }} — {{ detail.year }}</div>
+          <h3 style="margin:16px 0 0; font-size:32px; font-weight:600; line-height:1.18; letter-spacing:-0.02em; text-wrap:pretty">{{ detail.title }}</h3>
+          <div style="margin-top:10px; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#666666">{{ detail.role }}</div>
+          <p style="margin:28px 0 0; font-size:17px; line-height:1.66; color:#2E2E2E; text-wrap:pretty">{{ detail.blurb }}</p>
+          <ul style="margin:24px 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:12px">
+            <sc-for list="{{ detail.points }}" as="pt" hint-placeholder-count="3">
+              <li style="position:relative; padding-left:20px; font-size:15.5px; line-height:1.64; color:#2E2E2E; text-wrap:pretty">
+                <span style="position:absolute; left:0; top:9px; width:6px; height:6px; background:#C8102E"></span>
+                {{ pt }}
+              </li>
+            </sc-for>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <section id="contact" style="max-width:1180px; margin:88px auto 0; padding:0 48px 120px">
+    <div style="position:relative; border-top:1px solid #DCDCDC; padding:64px 0 0; overflow:hidden">
+      <div style="position:absolute; top:20px; left:-120px; width:460px; height:460px; border-radius:50%; background:radial-gradient(circle at 50% 50%, rgba(200,16,46,0.20), rgba(255,255,255,0) 68%); pointer-events:none"></div>
+      <div style="position:relative; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:40px">
+        <div style="max-width:560px">
+          <h2 style="margin:0; font-family:'Pretendard Variable','Pretendard','Helvetica Neue',Helvetica,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-weight:500; font-size:clamp(28px,3.6vw,46px); line-height:1.12; letter-spacing:-0.022em; text-wrap:pretty">Packaging development experience for transfer. That's the work I want to keep doing.</h2>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; font-size:16px">
+          <a href="mailto:ryuyeseung21@gmail.com" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:15px">ryuyeseung21@gmail.com</a>
+          <span style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:15px; color:#454545">+82 10 8892 7210</span>
+          <a href="https://www.linkedin.com/in/alyssa-yeseung-ryu-portfolio" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:15px">www.linkedin.com/in/alyssa-yeseung-ryu-portfolio</a>
+          <a href="https://instagram.com/ryeah_seung" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:15px">@ryeah_seung</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { i: 0, drag: 0, dragging: false, paused: false, w: 1, detail: null, shot: 0 };
+  SHOTS = 5;
+
+  openDetail = (p) => {
+    this.setState({ detail: p, shot: 0 });
+    clearInterval(this.shotTimer);
+    this.shotTimer = setInterval(() => this.setState(s => ({ shot: (s.shot + 1) % this.shotCount() })), 3000);
+  };
+  closeDetail = () => { clearInterval(this.shotTimer); this.setState({ detail: null, shot: 0 }); };
+
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      if (!this.state.dragging && !this.state.paused) this.go(1);
+    }, 3000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); clearInterval(this.shotTimer); }
+
+  shotPause = () => { clearInterval(this.shotTimer); };
+  shotResume = () => {
+    clearInterval(this.shotTimer);
+    this.shotTimer = setInterval(() => this.setState(s => ({ shot: (s.shot + 1) % this.shotCount() })), 3000);
+  };
+
+  FILLED = ["detail-01-2","detail-01-5","detail-01-tile","detail-02-tile","detail-03","detail-03-2","detail-03-3","detail-03-tile","detail-04-5","detail-05","detail-05-5"];
+
+  detailShots() {
+    const s = this.state, d = s.detail;
+    if (!d || !d.hasImage) return [];
+    const HIDDEN = ["detail-03-4"];
+    const ids = Array.from({ length: 5 }, (_, k) => (k === 0 ? d.slotId : d.slotId + "-" + (k + 1)))
+      .filter(id => HIDDEN.indexOf(id) < 0);
+    return ids.map((id, k) => ({
+      id: id,
+      ph: k === 0 ? "Drop project image" : "Drop photo " + (k + 1),
+      style: { position: "absolute", inset: 0, opacity: s.shot === k ? 1 : 0, pointerEvents: s.shot === k ? "auto" : "none", transition: "opacity 620ms ease" },
+      dotStyle: { width: "26px", height: "4px", border: 0, padding: 0, cursor: "pointer", background: s.shot === k ? "#C8102E" : "#DCDCDC" },
+      go: () => { clearInterval(this.shotTimer); this.setState({ shot: k }); }
+    }));
+  }
+
+  shotCount() { return this.detailShots().length || 1; }
+
+  count() { return this.slidesData().length; }
+  go(d) {
+    const n = this.count();
+    this.setState(s => ({ i: (s.i + d + n) % n }));
+  }
+  onEnter = () => this.setState({ paused: true });
+  onLeave = () => this.setState({ paused: false });
+
+  onDown = (e) => {
+    if (e.target && e.target.closest && e.target.closest("image-slot")) return;
+    this.startX = e.clientX;
+    this.setState({ dragging: true, drag: 0, w: e.currentTarget.offsetWidth || 1 });
+    if (e.currentTarget.setPointerCapture) e.currentTarget.setPointerCapture(e.pointerId);
+  };
+  onMove = (e) => {
+    if (!this.state.dragging) return;
+    this.setState({ drag: e.clientX - this.startX });
+  };
+  onUp = () => {
+    if (!this.state.dragging) return;
+    const d = this.state.drag;
+    const threshold = Math.min(120, this.state.w * 0.12);
+    this.setState({ dragging: false, drag: 0 });
+    if (d < -threshold) this.go(1);
+    else if (d > threshold) this.go(-1);
+  };
+
+  slidesData() {
+    return [
+      { num: "01", img: "./assets/slide-01.jpg", slotId: "hero-slide-1" },
+      { num: "02", img: "./assets/slide-02.jpg", slotId: "hero-slide-2" },
+      { num: "03", slotId: "hero-slide-3" },
+      { num: "04", slotId: "hero-slide-4" }
+    ];
+  }
+
+  projectsData() {
+    return [
+        { hasImage: true, points: ["Defined and analyzed the World Bank PRIDE project reports and masterplan as the NSEZ regional roadmap, developing PCPs across six sectors covering finance and governance.","Main contact for the Korea Planning Association within the project consortium — administration, scheduling and document submissions."], slotId: "detail-01", num: "01", year: "2026 —", title: "Bangladesh NSEZ Industrial Park Roadmap Review & PCP Development", blurb: "Reviewed the national industrial park roadmap and found carbon pricing and climate commitments almost entirely absent. That gap is now the core basis for the Energy, ESS and Waste Reduction Project Concept Papers co-authored with BEZA experts.", role: "Researcher · KOTRA × BEZA", place: "Bangladesh", imageNote: "site or roadmap diagram" },
+        { hasImage: true, points: ["Writing a benchmarking report on digital water transformation across multilateral banks, UN agencies and city utilities, drawing out practices that can transfer to other city contexts.","Translated and summarized ADB water sector policy documents into Korean so domestic research partners could feed Korean expertise back into regional program design."], slotId: "detail-02", num: "02", year: "2026 —", title: "Integrated Water Management Digital Framework", blurb: "Built a five-task work plan for Activity 2 from ADB's Water Security and Development Goals 2030 and related MDB and UN frameworks, and leads a regional digital water readiness toolkit organized around climate resilience.", role: "Researcher · ADB TA-9919", place: "Asia-Pacific", imageNote: "framework diagram" },
+        { hasImage: true, points: ["Reviewed 181 policy archive documents produced between 2014 and 2017 and updated them to current statistics and indicators.","Analyzed 243 policy assets including 62 newly identified recommendations, systematically organizing and documenting findings."], slotId: "detail-03", num: "03", year: "2025 – 2026", title: "Seoul Policy Archive Content Enhancement", blurb: "Reviewed 181 policy archive documents from 2014–2017 and updated them to current statistics and indicators; analyzed 243 policy assets including 62 newly identified recommendations.", role: "Researcher · Seoul Institute", place: "Seoul", imageNote: "archive spread" },
+        { hasImage: true, points: ["Attended design meetings with project leads and Cambodian municipal counterparts from early planning through final delivery.","Presented at the Final Report Meeting alongside Seoul Metropolitan Government, SUSA and Cambodian city officials.","Contributed to the final report covering design proposals, community engagement findings and policy recommendations."], slotId: "detail-04", num: "04", year: "2025", title: "Phnom Penh Walkable Street Masterplan", blurb: "The merchant association opposed a car-free street. Went through the foot traffic data with them directly; once the numbers showed a pedestrian corridor would bring more customers, the pilot moved forward.", role: "Researcher · Seoul ODA", place: "Cambodia", imageNote: "street photo" },
+        { hasImage: true, points: ["Attended a live Sparks Street BIA board meeting to see how the public-private partnership operates at the working level.","Produced a comparative analysis of Seoul and Ottawa's open space governance and delivered three policy recommendations to Seoul City Hall, including adapting Ottawa's long-range planning model for the Great Han River Project."], slotId: "detail-05", num: "05", year: "2024", title: "Public Space Policy Research Exchange, Ottawa", blurb: "Secured interviews with NCC, Ottawa City Hall, Sparks Street BIA, ByWard Market and Carleton faculty with no institutional introduction, and delivered three policy recommendations to Seoul City Hall.", role: "Field Researcher", place: "Ottawa, Canada", imageNote: "field photo" },
+        { hasImage: true, points: ["Worked alongside UN-Habitat staff and LH counterparts on housing and infrastructure policy.","Studied how UN agencies turn development experience into international cooperation programs, and where Korea's track record sits inside that system."], slotId: "detail-06", num: "06", year: "2023", title: "UN-Habitat Singapore Urban School", blurb: "Selected on scholarship to study infrastructure, housing and city development through Singapore's model, working alongside UN-Habitat staff and LH counterparts.", role: "Scholarship recipient", place: "Singapore", imageNote: "program photo" },
+        { hasImage: true, points: ["Research contribution to the Seoul Museum of History's district book documenting Ichon-dong."], slotId: "detail-07", num: "07", year: "2024", title: "Ichon-dong District Book Project", blurb: "Research contribution to the Seoul Museum of History's district book documenting Ichon-dong.", role: "Research contribution", place: "Seoul Museum of History", imageNote: "publication spread" },
+        { hasImage: true, points: ["Awarded research project with the Seoul Institute on integrating housing and employment in mixed-use development."], slotId: "detail-08", num: "08", year: "2025", title: "Housing and Employment Integrated Mixed-Use Development Model", blurb: "Awarded research project with the Seoul Institute on integrating housing and employment in mixed-use development.", role: "Award · Seoul Institute", place: "Seoul", imageNote: "model diagram" },
+        { isNext: true, hasImage: false, points: [], slotId: "detail-09", num: "09", year: "", title: "What's the NEXT", blurb: "", role: "", imageNote: "" }
+    ];
+  }
+
+  renderVals() {
+    const s = this.state, n = this.count();
+    const projectsData = this.projectsData().map(p => ({ ...p, tileSlot: p.slotId + "-tile", hasTile: this.FILLED.indexOf(p.slotId + "-tile") >= 0, open: p.hasImage ? () => this.openDetail(p) : undefined }));
+    const pct = -s.i * 100;
+    return {
+      gallery: [
+        ["g1", "Dhaka — NSEZ site", 0],
+        ["g2", "BEZA workshop", 34],
+        ["g3", "ADB water TA", 12],
+        ["g4", "Preah Ang Yukanthor", 52],
+        ["g5", "Merchant meeting", 20],
+        ["g6", "Phnom Penh pilot", 44],
+        ["g7", "Sparks Street BIA", 8],
+        ["g8", "Ottawa / NCC", 60],
+        ["g9", "Singapore Urban School", 26],
+        ["g10", "Seoul, lab", 48]
+      ].map(([id, label, top]) => ({ id, label, wrap: { margin: 0, marginTop: top + "px" } })),
+      slides: this.slidesData().map(sl => ({ ...sl, needsSlot: !sl.img })),
+      detail: s.detail,
+      closeDetail: this.closeDetail,
+      stop: (e) => e.stopPropagation(),
+      onDown: this.onDown, onMove: this.onMove, onUp: this.onUp,
+      onEnter: this.onEnter, onLeave: this.onLeave,
+      next: () => this.go(1), prev: () => this.go(-1),
+      trackStyle: {
+        display: "flex", height: "100%", width: "100%", willChange: "transform",
+        cursor: s.dragging ? "grabbing" : "grab",
+        transform: `translate3d(calc(${pct}% + ${s.drag}px), 0, 0)`,
+        transition: s.dragging ? "none" : "transform 780ms cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      progressStyle: {
+        position: "absolute", left: "48px", bottom: 0, height: "2px", background: "#C8102E",
+        width: `calc((100% - 96px) * ${(s.i + 1) / n})`,
+        transition: "width 600ms cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      fieldTiles: [
+        "NSEZ, Bangladesh",
+        "ADB water TA",
+        "Preah Ang Yukanthor",
+        "Phnom Penh pilot",
+        "Sparks Street BIA",
+        "Ottawa / NCC",
+        "Singapore Urban School"
+      ],
+      projects: projectsData,
+      detailShots: this.detailShots(),
+      hasShots: this.detailShots().length > 0,
+      shotPause: this.shotPause, shotResume: this.shotResume,
+      experiences: [
+        "International development (ODA) projects",
+        "Urban policy research and data analysis",
+        "Urban design and public space planning",
+        "Infrastructure management and digital innovation initiatives"
+      ],
+      cvGroups: [
+        { heading: "1. International Urban Development & ODA Projects", entries: [
+          { title: "Integrated Water Management Digital Framework (ADB TA-9919 REG)", dates: "2026.05–Present" },
+          { title: "Bangladesh NSEZ Road Map (EIPP)", dates: "2026.02–Present" },
+          { title: "AI & Digital Readiness for Water Utilities — World Bank Korea Knowledge Transfer Initiative", dates: "Present" },
+          { title: "Global Urban Studies Challenge, New York & Boston", dates: "2025.10" },
+          { title: "Urban Planning Workshop — MIT Senseable City Lab", dates: "2025.10" },
+          { title: "Cambodia Seoul ODA Challenge — Phnom Penh Public Space Project", dates: "2025.01–2025.08" },
+          { title: "Public Space Research Exchange, Ottawa, Canada", dates: "2024.07–2024.08" },
+          { title: "UN-Habitat Singapore SH Urban School Program", dates: "2023.07" }
+        ] },
+        { heading: "2. Policy Research & Data Analysis", entries: [
+          { title: "The Seoul Institute — Policy Sharing with Developing Countries", dates: "2025.10–2026.01" },
+          { title: "KPL Academic Research Collective", dates: "2023.02–2023.08" },
+          { title: "Youth Housing Policy Panel Survey Analysis", dates: "2021.06–2021.08" }
+        ] },
+        { heading: "3. Urban Design & Spatial Planning", entries: [
+          { title: "Graduation Capstone Project", dates: "2025.02–2025.07" },
+          { title: "Sejong City National Museum Complex Masterplan Design", dates: "2023" },
+          { title: "GIS Instructional Material — Textbook produced", dates: "" }
+        ] },
+        { heading: "4. Communication & Public Engagement", entries: [
+          { title: "Ichon-dong Community Archiving Book", dates: "2024.03–2024.08" },
+          { title: "Space Magazine Student Correspondent @ spacemagazine_korea", dates: "" },
+          { title: "Ministry of Land, Infrastructure and Transport Student Reporter", dates: "" }
+        ] },
+        { heading: "5. Leadership & Entrepreneurship", entries: [
+          { title: "SH Corporation “The Moment Project”", dates: "2024.09–2024.11" },
+          { title: "KPL Research Collective — Team Lead (@kplab_official)", dates: "2023.02–2023.08" },
+          { title: "University Ambassador “시선” (@uos_official_)", dates: "2022.03–2022.10" }
+        ] }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
